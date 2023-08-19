@@ -1,0 +1,48 @@
+:root{
+    --background-color: #0054A6;
+    --primary-main-color: #015EB9;
+    --primary-color-title: #082A36;
+    --primary-color-dark: #063A78;
+    --primary-color-body-1: #4F5A5E;
+    --primary-color-body-2: #8FA5AE;
+    --white-color: #fff;
+
+    --secondary-color-secondary-1: #00B9FF;
+    --secondary-color-secondary-2: #DD5BF2;
+    --status-color-info: #5C80FF;
+    --status-color-success: #51D4A5;
+    --status-color-warning: #FFB547;
+    --status-color-danger: #FF545F;
+
+    --shade-main-shade: #F2FBFF;
+    --shade-secondary-1-shade: #DFF6FF;
+    --shade-secondary-2-shade: #FCEBFF;
+    --shade-info-shade: #E3E9FF;
+    --shade-success-shade: #DCFBF0;
+    --shade-warning-shade: #FFEFD8;
+    --shade-danger-shade: #FFEAEB;
+    --shade-border-color: #EAEAEA;
+    --shade-light-bg: #F1F6F8;
+    --light-bg: #F9FBFC;
+
+    --title-fz: 42px;
+    --title-mobile-fz: 36px;
+
+    --subtitle-fz: 38px;
+    --subtitle-mobile-fz: 30px;
+
+    --cardtitle-fz: 22px;
+    --cardtitle-mobile-fz: 18px;
+
+    --secondary-title-fz: 28px;
+    --secondary-title-mobile-fz: 22px;
+
+    --body-fz: 16px;
+    --body-mobile-fz: 13px;
+
+    --secondary-body-fz: 15px;
+    --secondary-body-mobile-fz: 11px;
+
+    --small-body-fz: 13px;
+    --small-body-mobile-fz: 10px;
+}

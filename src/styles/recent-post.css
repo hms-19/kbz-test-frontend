@@ -1,0 +1,5 @@
+.recent-post-image{
+    height: 61px;
+    object-fit: contain;
+    border-radius: 5px;
+}

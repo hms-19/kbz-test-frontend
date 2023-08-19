@@ -1,0 +1,139 @@
+.blogLayout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    overflow: hidden;
+    padding: 43px 0;
+}
+
+.blog-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+#contact-us{
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    background-color: var(--shade-man-shade);
+    overflow: hidden;
+}
+
+#contact-us .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#contact-us .container button,
+#contact-us .container h2{
+    z-index: 3;
+}
+
+#contact-us .container h2{
+    text-align: center;
+}
+
+#contact-us img{
+    position: absolute;
+    z-index: 1;
+}
+
+#contact-us .leaf-ellipse-1{
+    bottom: 0;
+    left: 0;
+}
+
+#contact-us .leaf-ellipse-2{
+    top: 0;
+    right: 0;
+    transform: rotate(-180deg);
+}
+
+#contact-us .dots-ellipse{
+    bottom: 0;
+    right: 30%;
+}
+
+#contact-us .arrow-ellipse{
+    top: 10%;
+    left: 10%;
+}
+
+
+.filter-btn{
+    display: none;
+}
+
+.blog-details .img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.blog-details .avatar{
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.blog-details .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.blog-details .avatar span{
+    background-color: #015EB9;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    border-radius: 50%;
+    height: 24px;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 966px) {
+    .blogLayout{
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .blog-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .filter-btn{
+        display: block;
+        margin: 10px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .blog-details .img{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .blog-details .img{
+        height: 300px;
+    }
+}

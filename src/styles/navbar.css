@@ -1,0 +1,148 @@
+
+header{
+    width: 100%;
+    background-color: var(--shade-secondary-1-shade);
+    padding: 8px 0;
+}
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 30px;
+}
+
+nav{
+    width: 100%;
+    min-height: 85px;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    background-color: var(--white-color);
+}
+
+.activeNav{
+    border-bottom: 2px solid var(--primary-main-color);
+    color: var(--primary-main-color) !important;
+}
+
+.navbar .logo{
+    display: block;
+    flex-grow: 1;
+}
+
+.navbar .logo img{
+    width: 226px;
+    height: 53px;
+    object-fit: contain;
+}
+
+
+.navbar ul{
+    list-style: none;
+    flex-grow: 4;
+    opacity: 1;
+    transition: .4s;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 30px 15px;
+    display: block;
+    color: var(--primary-color-body-1);
+}
+
+.search-box{
+    position: relative;
+}
+
+.search-input{
+    position: absolute;   
+    width: 0px;
+    height: 35px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: var(--shade-light-bg);
+    border-radius: 6px;
+    color: var(--primary-color-body-1);
+    position: absolute;
+    right: 0%;
+    padding: 0px;
+    top: 0;
+    transform: translate(-10%,-50%);
+    transition: .8s;
+}
+
+.search-input.active{
+    width: 230px;
+    padding: 10px;
+}
+
+.search-btn{
+    font-size: 25px;
+    color: var(--primary-color-body-1);
+    margin: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    transform: translate(50%,-50%);
+}
+
+@media screen and (max-width: 1100px){
+
+    .header-content .col-1{
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .header-content .col-3{
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .header-content .col-2{
+        order: 3;
+        flex-grow: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar .logo img{
+        width: 106px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    nav ul{
+        opacity: 1;
+    }
+
+    .nav-ul-active{
+        opacity: 0 !important;
+    }
+
+    .search-input.active{
+        width: 200px;
+        padding: 10px;
+    }
+
+}

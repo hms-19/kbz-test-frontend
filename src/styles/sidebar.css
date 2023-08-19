@@ -1,0 +1,104 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    transition: .5s;
+}
+
+.search{
+    width: 100%;
+    height: 55px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    border: 1px solid #E6EDF3;
+    display: flex;
+}
+
+.search .search-icon{
+    width: 40px;
+    height: 100%;
+    padding: 8px;
+    color: var(--primary-color-body-1);
+}
+
+.search input{
+    border: none;
+    outline: none;
+    background-color: var(--light-bg);
+    width: 100%;
+    padding: 0 10px;
+    font-size: var(--body-1-fz);
+    color: var(--primary-color-body-1);
+}
+
+.card{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #E6EDF3;
+}
+
+.card-header{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: 8px 8px 0px 0px;
+    padding: 20px;
+}
+
+.card-body{
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 20px;
+}
+
+.tag{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #E6EDF3;
+    background: #F1F6F8;
+    padding: 4px 12px;
+    color: var(--primary-color-body-1);
+}
+
+.subscribe{
+    width: 100%;
+    min-height: 333px;
+    background-color: var(--primary-main-color);
+    background-image: url(../../public/images/subscribe-to.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.subscribe h2{
+    font-size: 32px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.subscribe input{
+    min-width: 220px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--primary-color-body-1);
+}
+
+@media screen and (max-width: 768px) {
+    .subscribe h2{
+        font-size: 26px;
+    }
+    .sidebar{
+        background-color: #fff;
+        min-height: 600px !important;
+        overflow: scroll;
+        display: none;
+    }
+}
