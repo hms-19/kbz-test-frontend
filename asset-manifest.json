@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kbz-test-frontend/static/css/main.c1a76a40.css",
+    "main.js": "/kbz-test-frontend/static/js/main.7f38d07f.js",
+    "static/media/compass-tech.png": "/kbz-test-frontend/static/media/compass-tech.1841790153d26f62cdb5.png",
+    "static/media/subscribe-to.png": "/kbz-test-frontend/static/media/subscribe-to.b8801e78269b83425d29.png",
+    "static/media/breadcrumb-bg.png": "/kbz-test-frontend/static/media/breadcrumb-bg.325eccbcbf52d2261c77.png",
+    "index.html": "/kbz-test-frontend/index.html",
+    "main.c1a76a40.css.map": "/kbz-test-frontend/static/css/main.c1a76a40.css.map",
+    "main.7f38d07f.js.map": "/kbz-test-frontend/static/js/main.7f38d07f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1a76a40.css",
+    "static/js/main.7f38d07f.js"
+  ]
+}
