@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom';
 import Subscribe from '../components/Subscribe';
 import '../styles/blog.css'
 import RelatedBlogs from '../components/RelatedBlogs';
+import Loading from '../components/Loading';
 
 const BlogDetail : React.FC<{}> = () => {
 
@@ -59,7 +60,7 @@ const BlogDetail : React.FC<{}> = () => {
         <Breadcrumb title={blog?.title} links={links} />
 
         {isLoading ? (
-          <>Loading...</>
+          <Loading />
           ) : isError ? (
             <>Error...</>
           ) : (

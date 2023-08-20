@@ -14,6 +14,7 @@ import Subscribe from '../components/Subscribe'
 import { BlogCardProps } from '../types';
 import { useGetBlogsQuery } from '../features/apis/blogsSlice'
 import { Link } from 'react-router-dom'
+import Loading from '../components/Loading';
 
 const Home : React.FC<{}> = () => {
 
@@ -31,7 +32,7 @@ const Home : React.FC<{}> = () => {
 
   return (
     isLoading ? (
-        <>Loading...</>
+        <Loading />
         ) : isError ? (
           <>Error</>
         ) : (

@@ -15,8 +15,7 @@ export const blogsApi = createApi({
             body,
         }),
         transformResponse: (response : any, request : any) => {
-          const { data, page } = request;
-          
+          const { data, page, title, category_id, tag_id } = request;
           return {
             data: [...(data?.data || []), ...response.data],            
             status: response?.status

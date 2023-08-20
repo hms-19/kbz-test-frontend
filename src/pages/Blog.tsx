@@ -7,8 +7,10 @@ import { FaLongArrowAltRight } from 'react-icons/fa';
 import Button from '../components/Button';
 import { BiFilterAlt } from 'react-icons/bi';
 import { BlogCardProps, BlogProps } from '../types';
-import { useGetBlogsQuery } from '../features/apis/blogsSlice';
+import { useGetBlogsQuery, blogsApi } from '../features/apis/blogsSlice';
 import { useSearchParams } from 'react-router-dom';
+import Loading from '../components/Loading';
+import { useDispatch } from 'react-redux';
 const Blog : React.FC<{}> = () => {
 
   const [links, setLinks] = useState([
@@ -36,7 +38,6 @@ const Blog : React.FC<{}> = () => {
   const [page, setPage] = useState(1)
   const [per_page, setPerPage] = useState(6)
   const [isLoadMore, setIsLoadMore] = useState(false)
-
   const [combinedData, setCombinedData] = useState<BlogProps>([]);
 
   const { data, error, isLoading, isError, refetch } = useGetBlogsQuery({
@@ -47,19 +48,23 @@ const Blog : React.FC<{}> = () => {
     tag_id
   });
 
+
   React.useEffect(() => {
-    if(!isLoadMore){
+    setPage(1);  
+  },[title,category_id,tag_id])
+
+  React.useEffect(() => {
       if (data) {
-        setCombinedData(data.data);
+        if(isLoadMore){
+          setCombinedData((prevData) => [...prevData, ...data.data]);
+        }
+        else{
+          setCombinedData(data.data);
+        }
+        setIsLoadMore(false)
       }
-    }
-    else{
-      if (data) {
-        setCombinedData((prevData) => [...prevData, ...data.data]);
-      }
-    }
     
-  }, [data, isLoadMore]);  
+  }, [data]);  
 
   if(!isLoading){
     if(data?.status == 1){
@@ -69,7 +74,7 @@ const Blog : React.FC<{}> = () => {
   }
 
   const loadMoreData = (event ?:  React.MouseEvent<HTMLElement>) => {
-    setIsLoadMore(!isLoadMore)
+    setIsLoadMore(true)
     setPage((prevPage) => prevPage + 1);  
   }
 
@@ -78,7 +83,7 @@ const Blog : React.FC<{}> = () => {
         <Breadcrumb title='Blogs' links={links} />
 
         {isLoading ? (
-          <>Loading...</>
+          <Loading />
           ) : isError ? (
             <>Error...</>
           ) : (
