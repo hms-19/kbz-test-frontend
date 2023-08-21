@@ -2,7 +2,8 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hms-19.github.io/kbz-test-frontend",
+  "homepage": ".",
+  "proxy": "http://54.95.229.18",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@splidejs/react-splide": "^0.7.12",
