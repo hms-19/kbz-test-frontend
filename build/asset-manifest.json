@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.de8d6773.css",
-    "main.js": "./static/js/main.29a78057.js",
-    "static/media/compass-tech.png": "./static/media/compass-tech.1841790153d26f62cdb5.png",
-    "static/media/subscribe-to.png": "./static/media/subscribe-to.b8801e78269b83425d29.png",
-    "static/media/breadcrumb-bg.png": "./static/media/breadcrumb-bg.325eccbcbf52d2261c77.png",
-    "index.html": "./index.html",
-    "main.de8d6773.css.map": "./static/css/main.de8d6773.css.map",
-    "main.29a78057.js.map": "./static/js/main.29a78057.js.map"
+    "main.css": "/static/css/main.a4dcfeb1.css",
+    "main.js": "/static/js/main.f8868899.js",
+    "static/media/compass-tech.png": "/static/media/compass-tech.1841790153d26f62cdb5.png",
+    "static/media/subscribe-to.png": "/static/media/subscribe-to.b8801e78269b83425d29.png",
+    "static/media/breadcrumb-bg.png": "/static/media/breadcrumb-bg.325eccbcbf52d2261c77.png",
+    "index.html": "/index.html",
+    "main.a4dcfeb1.css.map": "/static/css/main.a4dcfeb1.css.map",
+    "main.f8868899.js.map": "/static/js/main.f8868899.js.map"
   },
   "entrypoints": [
-    "static/css/main.de8d6773.css",
-    "static/js/main.29a78057.js"
+    "static/css/main.a4dcfeb1.css",
+    "static/js/main.f8868899.js"
   ]
 }
